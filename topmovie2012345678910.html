@@ -1,0 +1,156 @@
+<html>
+    <head>
+    <title>My Top 10 Favorite Movies</title>
+
+    <style>
+             body{
+                margin: 0;
+                padding: 0;
+                background: url(wwy.gif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center center;
+                background-size: cover;
+                height: 200vh;
+            }
+            header{
+                background: url(clouds.gif);
+                color: rgb(255, 255, 255);
+                padding: 0px;
+                width: 100%;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: light;
+                position: fixed;
+                z-index: 1;
+            }
+            h1{
+                color: white;
+                font-size: 36px;
+                text-align: center;
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #00004a;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding: 25px;
+            }
+            .item{
+                margin: 10px;
+                width: 150px;
+                height: 350px;
+                text-align: center;
+                background-color: rgba(253, 253, 253, 0.8);
+                border-radius: 40px;
+                padding: 40px;
+                box-shadow: 0 4px 5px rgb(3, 11, 105);
+                transition: transform 0.3s ease;
+                position: relative;
+            }
+            .item img{
+                width: 150px;
+                height: 150px;
+                border-radius: 25%;
+                margin-bottom: 20px;
+                object-fit: cover;
+            }
+            .item p{
+                margin: 5px 0;
+                font-size: 13px;
+                color: #000000;
+                text-align: justify;
+            }
+            .content{
+                padding: 16px;
+            }
+            .sticky{
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content{
+                padding-top: 102px;
+            }
+         </style>
+        </head>
+    <body>
+        <header>
+
+            <h1 class="header">My Top 10 Favorite Movies</h1>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+        <div class="item">
+            <img src="howls moving castless.jpg">
+            <b>Howl's Moving Castle</b>
+            <p>Sophie is subjected to a terrible spell that makes her an elderly woman. The Wizard Howl's castle, which is constantly shifting among the hills, is her only hope of breaking it.</p>
+            </div>
+        <div class="item">
+            <img src="weathring with you123.jpg">
+            <b>Weathering with you</b>
+            <p>Chihiro's family is moving to a new house, but when they stop on the way to explore an abandoned village, her parents undergo a mysterious transformation and Chihiro is whisked into a world of fantastic spirits ruled over by the sorceress Yubaba.</p>
+            </div>
+        <div class="item">
+            <img src="your name.jpg">
+            <b>Your name</b>
+            <p>A high school student becomes a globally beloved singer after entering a fantastic virtual world. She soon embarks on an emotional and epic quest to uncover the identity of a mysterious beast who's on the run from ruthless vigilantes.</p>
+            </div>
+            <div class="item">
+            <img src="when marnie was there.jpg">
+            <b>When Marnie was there</b>
+            <p>In an imaginative and lighthearted tale, a young schoolgirl saves the life of a noble cat and is rewarded with a shocking proposal of marriage - to the Cat King's son - and a fateful journey to the extraordinary Kingdom of Cats.</p>
+            </div>
+            <div class="item">
+            <img src="totoro123.jpeg">
+            <b>My Neighbor Totoro</b>
+            <p> When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby. They discover that their new house and the nerby forest are home to magical creatures called Totoro's.</p>
+            </div>
+            <div class="item">
+            <img src="ponyo123.jpg">
+            <b>Ponyo</b>
+            <p>About a young girl fish who defies her father's wishes and beliefs about the human world to live with the boy she loves. After covertly travelling to the surface by jellyfish, Ponyo becomes stranded near a house on a seaside cliff, where she is found and rescued by a human boy named Sosuke.</p>
+            </div>
+            <div class="item">
+            <img src="suzume.jpg">
+            <b>Suzume</b>
+            <p>Japan stands on the brink of disaster. However, a determined teenager named Suzume sets out on a mission to save her country. Able to see supernatural forces that others cannot, it's up to her to close the mysterious doors that are spreading chaos across the land.</p>
+            </div>
+            <div class="item">
+            <img src="the secret world of arriety.jpg">
+            <b>The secret world of arrietty</b>
+            <p>The Clock family are four-inch-tall people who live anonymously in another family's residence, borrowing simple items to make their home. Life changes for the Clocks when their teenage daughter Arrietty is discovered.</p>
+            </div>
+            <div class="item">
+            <img src="from up on poppy hill.jpg">
+            <b>From up on poppy hill</b>
+            <p>Two high school students, Umi and Shun, are caught in  Japan’s struggle to rebuild after World War II as they prepare for the next year’s Olympic Games.  Umi, Shun and their classmates work to save a run-down clubhouse.</p>
+            </div>
+            <div class="item">
+            <img src="your lie in april.jpg">
+            <b>Your lie in April</b>
+            <p>Kousei, a young piano prodigy who, after the death of his mother, had a mental breakdown and ultimately lost the ability to hear the music he played.Three years later, he meets his friend’s new girlfriend,Kaori—a free spirited violinist who makes it her life’s mission to rekindle Kousei’s lost love for performing music on stage.</p>
+            </div>
+            <script>
+                        window.onscroll = function() {myFunction()};
+            
+                         var header = document.getElementById("header");
+                        var sticky = header.offsetTop;
+            
+                        function myFunction() {
+                         if (window.pageYOffset > sticky) {
+                           header.classList.add("sticky");
+                         } else {
+                             header.classList.remove("sticky");
+                         }
+                     }
+         </script>
+      </body>
+    </html>
